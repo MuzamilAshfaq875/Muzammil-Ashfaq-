@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+// Function with no argument and no return value
+void functionA()
+{
+  int a;
+cout<<"Enter a number";
+cin>>a;
+  if (a%2==0)
+cout<<a<<"is even"<<"\n";
+  else
+cout<<a<<"is odd"<<"\n";
+}
+// Function with no argument but return value
+int functionB()
+{
+  int b;
+cout<<"Enter a number";
+cin>>b;
+  if (b%2==0)
+    return 0;
+  else
+    return 1;
+}
+// Function with argument but no return value
+void functionC(int c)
+{
+  if (c%2==0)
+cout<<c<<"is even"<<"\n";
+  else
+cout<<c<<"is odd"<<"\n";
+}
+// Function with argument and return value
+int functionD(int d)
+{
+  if (d%2==0)
+    return 0;
+  else
+    return 1;
+}
+int main()
+{
+cout<<"Function with no argument and no return value"<<"\n";
+  functionA();
+cout<<"\nFunction with no argument but return value"<<"\n";
+  int result=functionB();
+  if (result=1)
+cout<<"The number is even"<<"\n";
+  else
+cout<<"The number is odd"<<"\n";
+cout<<"\nFunction with argument but no return value"<<"\n";
+  int c;
+cout<<"Enter a number";
+cin>>c;
+       functionC(c);
+cout<<"\nFunction with argument and return value"<<"\n";
+cout<<"Enter a number";
+cin>>c;
+  int result1=functionD(d);
+  if (result1=1)
+cout<<d<<"is even"<<"\n";
+  else
+cout<<d<<"is odd"<<"\n";
+  return 0;
+}
+    
